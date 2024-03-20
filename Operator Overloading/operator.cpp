@@ -11,6 +11,11 @@ public:
     {
         radius++;
     }
+
+    void operator--()
+    {
+        radius--;
+    }
 };
 
 int main()
@@ -20,6 +25,10 @@ int main()
     c.radius = 10;
     ++c;
     // c.radius++;
-    cout << c.radius;
+    cout << c.radius << endl;
+
+    --c;
+    cout << c.radius << endl;
+
     return 0;
 }
